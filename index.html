@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GOAT | Who is the greatest?</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="GOAT.png"
+          alt="GOAT logo"
+          class="nav__logo"
+          id="logo"
+          designer="Tase"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Accolades</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Stats</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">My opinion</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Open account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Who is the
+          <!-- Green highlight effect -->
+          <span class="highlight">greatest</span>
+          of all <br />
+          <span class="highlight">time</span>
+        </h1>
+        <h4>Choose for the best player among those 3 greats</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img src="mlk.jpg" class="header__img" alt="Minimalist bank items" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">GOATs of their era</h2>
+        <h3 class="section__header">
+          This is a poll between Michael Jordan, Kobe Bryant and LeBron James.
+          Vote your GOAT between these 3.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="mj.jpg"
+          data-src="mj.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Michaeel Jeffrey Jordan</h5>
+          <p>
+            Jordan was born at Cumberland Hospital in Fort Greene, Brooklyn, New
+            York City, on February 17, 1963,[28] the son of bank employee
+            Deloris (née Peoples) and equipment supervisor James R. Jordan
+            Sr.[28][29] In 1968, he moved with his family to Wilmington, North
+            Carolina.[30] Jordan attended Emsley A. Laney High School in
+            Wilmington, where he highlighted his athletic career by playing
+            basketball, baseball, and football. He tried out for the basketball
+            varsity team during his sophomore year; at 5 feet 11 inches (1.80
+            m), he was deemed too short to play at that level. His taller friend
+            Harvest Leroy Smith was the only sophomore to make the team
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">LeBron Raymone James</h5>
+          <p>
+            As a freshman, James averaged 21 points and 6 rebounds per game for
+            the St. Vincent–St. Mary varsity basketball team.[20] The Fighting
+            Irish went 27–0 en route to the Division III state title, making
+            them the only boys high school team in Ohio to finish the season
+            undefeated.[21] As a sophomore, James averaged 25.2 points and 7.2
+            rebounds, along with 5.8 assists and 3.8 steals per game.[22] For
+            some home games during the season, St. Vincent–St. Mary played at
+            the University of Akron's 5,492-seat Rhodes Arena to satisfy ticket
+            demand from alumni, fans, as well as college and NBA scouts who
+            wanted to see James play.[23] The Fighting Irish finished the season
+            26–1 and repeated as state champions.[20] For his outstanding play,
+            James was named Ohio Mr. Basketball and selected to the USA Today
+            All-USA First Team, becoming the first sophomore to do either.[20]
+          </p>
+        </div>
+        <img
+          src="lbj.jpg"
+          data-src="lbj"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="kb.jpg"
+          data-src="kb.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Kobe "Bean" Bryant</h5>
+          <p>
+            Bryant was born in Philadelphia, the youngest of three children and
+            the only son of Pamela Cox Bryant and former NBA player Joe Bryant.
+            He was also the maternal nephew of NBA player John "Chubby" Cox.His
+            parents named him after the famous beef of Kobe, Japan, which they
+            saw on a restaurant menu. His middle name, Bean, was derived from
+            his father's nickname "Jellybean." Bryant's family was Catholic and
+            he was brought up with this faith.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Accolades</h2>
+        <h3 class="section__header">
+          Important awards and a brief team history
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Michael Jordan
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>LeBron James
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Kobe Bryant
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Chicago Bulls (1984-1998), Washigton Wizards (2001-2003)
+          </h5>
+          <p>
+            Michael Jordan was drafted in the 1984 draft by the Chicago Bulls
+            with the 3rd overall pick. His accolades during that period are: 6x
+            NBA Champion, 6x NBA Finals MVP, 1x Defensive player of the year, 5x
+            NBA MVP and 1x Rookie of the year. He was a 14x All Star and a 3x
+            All-Star Game MVP. He was also selected in 10 All-NBA First Teams
+            and an 1 All-NBA Second team.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Cleveland Cavaliers (2003-2010, 2014-2018), Miami Heat (2010 -
+            2014), Los Angeles Lakers (2018 - today)
+          </h5>
+          <p>
+            LeBron James was drafted in the 2003 draft by the Cleveland
+            Cavaliers with the 1st overall pick. He then moved to the Miami
+            Heat, returned to Cleveland for a second time and now he is a member
+            of the L.A Lakers. His accolades during that period are: 4x NBA
+            Champion, 4x NBA Finals MVP, 4x NBA MVP and 1x Rookie of the year.
+            He was a 18x All Star and a 2x All-Star Game MVP. He was also
+            selected in 13 All-NBA First Teams, 3x All-NBA Second team and an 1x
+            All-NBA Third team.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">Los Angeles Lakers (1996-2016)</h5>
+          <p>
+            Kobe Bryant was drafted in the 1996 draft by the Charlotte Hornets
+            with the 13th overall pick and immediately traded to the L.A Lakers
+            . His accolades during that period are: 5x NBA Champion, 2x NBA
+            Finals MVP, 2x NBA MVP. He was a 14x All Star and a 3x All-Star Game
+            MVP. He was also selected in 11 All-NBA First teams, 2 All-NBA
+            Second teams and an 2 All-NBA Third teams.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          This is my opinion on the debate, this is a subjective matter so
+          there's no wrong choice
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Michael Jordan has the best prime and the most accolades!
+            </h5>
+            <blockquote class="testimonial__text">
+              It's a fact that Michael Jordan managed to win the most titles
+              between these 3 while threepeating 2 times! He has more MVPs and
+              more Finals MVP while at the same time putting up the best numbers
+              of all time during his prime. His airness is very tough to beat!
+              He became a global icon and managed to make the game of basketball
+              even more popular. Most people consider him the GOAT and,
+              admittedly, he has an amazing case!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="MJH.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Michael Jordan</h6>
+              <p class="testimonial__location">Chicago, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              LeBron wins the longevity arguement and he's been the most
+              consistent player of all time!
+            </h5>
+            <blockquote class="testimonial__text">
+              Even now at 38 years old LeBron remains one of the best 5 players
+              in the world. He's been the epitomy of consistency while carrying
+              subpar teams to the Finals. His stats are out of thIS world and
+              not only he's won a lot of awards, he's managed to do it with 3
+              different teams. By the end of his career he'll be the top scorer
+              of NBA history, while being viewed as a pass first guy. He's on
+              track to finish his careed with 40k points, 10k assists and 10k
+              rebounds. Personally i view LeBron as the GOAT!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="lbjh.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">LeBron James</h6>
+              <p class="testimonial__location">Los Angeles, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Kobe has influened generations with his mindset, the famous Mamba
+              Mentality!
+            </h5>
+            <blockquote class="testimonial__text">
+              His stats and accolades, even though they're astounding, don't
+              compare to those of LeBron and Jordan. What seperates Kobe from
+              the others is his mentality and how much he influened the whole
+              basketball community with his dedication to his craft and hard
+              work. Kobe managed to inspired millions of people by always
+              playing his harderst and winning everything. His legacy will never
+              be forgotten. R.I.P Mamba
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="KBJ.png" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Kobe Bryant</h6>
+              <p class="testimonial__location">Los Angeles, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <!-- <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Who do you think is the GOAT? Every opinion is appreciated, join up to
+          express yours!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Voting</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="GOAT.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/HoodieTase"
+          >Passias Anastasios</a
+        >. Use for learning or your portfolio. Don't use to teach. Don't claim
+        as your own product.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
